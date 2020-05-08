@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolkswagenTest.View.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="Entry_Username" Placeholder="Username"/>
+            <Entry x:Name="Entry_Password" Placeholder="Password"/>
+            <Button x:Name="Btn_LogIn" Text="log in" Clicked="LogInProcedure"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
