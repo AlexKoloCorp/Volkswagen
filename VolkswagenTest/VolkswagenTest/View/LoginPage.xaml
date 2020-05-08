@@ -2,11 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VolkswagenTest.View.LoginPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Entry x:Name="Entry_Username" Placeholder="Username"/>
-            <Entry x:Name="Entry_Password" Placeholder="Password"/>
-            <Button x:Name="Btn_LogIn" Text="log in" Clicked="LogInProcedure"/>
+    <StackLayout>
+        <StackLayout BackgroundColor="#9b9b9b">
+            <Image Source="CarlogFinal.png" HeightRequest="80"/>
         </StackLayout>
-    </ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Entry x:Name="Entry_Username" Placeholder="Username" WidthRequest="200" 
+                       Margin="0,120,0,0" HorizontalOptions="Center" />
+                <Entry x:Name="Entry_Password" Placeholder="Password" WidthRequest="200"
+                       Margin="0,0,0,0" HorizontalOptions="Center"/>
+                <Button x:Name="Btn_LogIn" Text="log in" Clicked="LogInProcedure" WidthRequest="200" HeightRequest="50"
+                        Margin="0,0,0,0" HorizontalOptions="Center" BackgroundColor="#FCD666"/>
+                <Button x:Name="Btn_SigIn" Text="sig in" Clicked="SigInProcedure" WidthRequest="200" HeightRequest="50"
+                        Margin="0,0,0,0" HorizontalOptions="Center" BorderWidth="1"
+                    BackgroundColor="White" TextColor="#857566"
+                        BorderRadius="0" />
+                <Label x:Name="Forgon_Pass" Text="forgot your password?" HorizontalOptions="Center" TextColor="#857566"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

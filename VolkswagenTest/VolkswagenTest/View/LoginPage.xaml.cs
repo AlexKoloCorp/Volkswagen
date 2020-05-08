@@ -21,12 +21,18 @@ namespace VolkswagenTest.View
             User user = new User(Entry_Username.Text,Entry_Password.Text);
             if (user.CheckInfo())
             {
-                DisplayAlert("Login","Login Success","Ok");
+                DisplayAlert("Login","Log in Success","Ok");
+                App.UserDatabase.SaveUser(user);
             }
             else
             {
-                DisplayAlert("Login", "Login not correcct", "Ok");
+                DisplayAlert("Login", "Log in not correcct", "Ok");
             }
         }
-	}
+        void SigInProcedure (object sender, EventArgs e)
+        {
+            DisplayAlert("Sigin","sig in doesn't work yet","Ok");
+        }
+
+    }
 }
